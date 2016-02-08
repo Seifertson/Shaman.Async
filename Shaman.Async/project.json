@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0-beta-2014",
+  "authors": [
+    "Andrea Martinelli"
+  ],
+  "compilationOptions": {
+    "keyFile": "ShamanOpenSourceKey.snk",
+    "define": [
+      "SMALL_LIB_AWDEE"
+    ]
+  },
+  "compile": [],
+  "frameworks": {
+    "net45+win+wpa81": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.0.0",
+        "System.Runtime.Extensions": "4.0.0.0",
+        "System.Collections": "4.0.0.0",
+        "System.Linq": "4.0.0.0",
+        "System.Threading": "4.0.0.0",
+        "System.Threading.Tasks": "4.0.0.0"
+      }
+    },
+    "net35": {
+      "compilationOptions": {
+        "define": [
+          "NETFX_35"
+        ]
+      },
+      "dependencies": {
+        "AsyncBridge.Net35": "0.2.0"
+      }
+    },
+    "net45": {
+      "compilationOptions": {
+        "define": []
+      },
+      "dependencies": {}
+    }
+  }
+}
