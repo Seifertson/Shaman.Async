@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-beta-2014",
+  "version": "1.0.1.1",
   "authors": [
     "Andrea Martinelli"
   ],
@@ -11,16 +11,6 @@
   },
   "compile": [],
   "frameworks": {
-    "net45+win+wpa81": {
-      "frameworkAssemblies": {
-        "System.Runtime": "4.0.0.0",
-        "System.Runtime.Extensions": "4.0.0.0",
-        "System.Collections": "4.0.0.0",
-        "System.Linq": "4.0.0.0",
-        "System.Threading": "4.0.0.0",
-        "System.Threading.Tasks": "4.0.0.0"
-      }
-    },
     "net35": {
       "compilationOptions": {
         "define": [
@@ -36,6 +26,14 @@
         "define": []
       },
       "dependencies": {}
+    },
+    "netstandard1.3": {
+      "dependencies": {
+        "System.Runtime": "4.1",
+        "System.Threading.Tasks": "4.0.11",
+        "System.Linq": "4.1",
+        "System.Threading": "4.0.11"
+      }
     }
   }
 }
